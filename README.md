@@ -70,3 +70,6 @@ Check these logs if you have issues:
 C:\Windows\Temp\zabbix_install.log
 
 C:\Windows\Temp\zabbix_msi_install.log
+
+📄 License
+MIT License - see LICENSE file for details
