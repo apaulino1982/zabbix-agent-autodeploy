@@ -23,7 +23,6 @@ Create a network share containing:
 ├── zabbix_agent-7.2.3-windows-amd64-openssl.msi
 └── (other agent versions if needed)
 
-
 ### 2. Zabbix Server Configuration
 Configure auto-registration on your Zabbix Server:
 
@@ -43,17 +42,13 @@ Configure auto-registration on your Zabbix Server:
 .\deploy-zabbix-agent.ps1 -ZabbixServer "192.168.1.100" -SharePath "\\fileserver\Scripts\ZabbixAgent"
 
 Advanced Usage
-
-.\deploy-zabbix-agent.ps1 `
-    -ZabbixServer "zabbix.company.com" `
-    -SharePath "\\nas\Deploy\Zabbix" `
-    -HostMetadata "Windows-Servers"
+.\deploy-zabbix-agent.ps1 -ZabbixServer "zabbix.company.com" -SharePath "\\nas\Deploy\Zabbix" -HostMetadata "Windows-Servers"
 
 📋 Parameters
-Parameter	Required	Description
-ZabbixServer	✅	Zabbix server IP/hostname
-SharePath	✅	Network path to MSI installer
-HostMetadata	❌	Auto-registration group
+Parameter	      Required	Description
+ZabbixServer	    ✅	    Zabbix server IP/hostname
+SharePath	        ✅	    Network path to MSI installer
+HostMetadata	    ❌	    Auto-registration group
 
 🔧 Configuration
 The script automatically configures:
